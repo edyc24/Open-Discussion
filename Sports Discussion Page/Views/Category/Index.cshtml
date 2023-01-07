@@ -1,0 +1,19 @@
+﻿
+<h2>Categorii</h2>
+<br />
+
+@foreach (var category in ViewBag.Categories)
+{
+        <h1>@category.CategoryName</h1>
+        <p>@category.CategoryId</p>
+
+        <br />
+
+        <a href="/Category/New">Adaugare subiect</a>
+        <br />
+    <a href="/Category/Show/@category.CategoryId">Afisare subiect</a>
+        <br />
+    <a href="/Category/Edit/@category.CategoryId">Editare subiect</a>
+      
+        <hr />
+}
